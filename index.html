@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC4 Encryption</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Micro+5+Charted&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>RC4 Encryption</h1>
+        <form id="rc4-form">
+            <label for="key">Key:</label>
+            <input type="text" id="key" name="key" placeholder="Enter Your Key" autocomplete="off">
+
+            <label for="text">Text:</label>
+            <textarea id="text" name="text" placeholder="Enter You Text" autocomplete="off"></textarea>
+
+            <div class="button">
+                <button type="button" id="encrypt-btn">Encrypt</button>
+                <button type="button" id="clear" onclick="clearFields()" class="btn-clear">clear</button>
+            </div>
+        </form>
+
+        <div id="result">
+            <label for="encrypted-text">Encrypted Text:</label>
+            <textarea id="encrypted-text" name="encrypted-text" readonly placeholder="Result"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
