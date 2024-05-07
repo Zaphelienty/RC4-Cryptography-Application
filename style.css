@@ -6,8 +6,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   color: white;
-  /* background-color: #C0C0C0; */
-  background: linear-gradient(to top right, #004165 50%, #004165 50%, #0087e0 50%);
+  background: linear-gradient(to bottom, #2e3b4e, #495a70);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -27,6 +26,7 @@ h1 {
 label {
   display: block;
   margin-bottom: 5px;
+  color: #e0e0e0; /* Warna lembut */
 }
 
 input,
@@ -35,12 +35,13 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb; /* Ubah warna border */
   border-radius: 5px;
   resize: none;
   box-sizing: border-box;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2); /* Warna background */
+  color: white; /* Warna teks */
 }
 
 .button {
@@ -51,24 +52,25 @@ textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #004165;
-  color: #fff;
+  background-color: #506680; /* Warna biru tua */
+  color: #e0e0e0; /* Warna teks putih krem */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   box-sizing: border-box;
-  border: 1px solid #0087e0;
+  border: 1px solid #6d889c; /* Border lebih gelap */
+  transition: all 0.3s ease; /* Transisi halus */
 }
 
-button:hover{
-  background-color: #0087e0;
+button:hover {
+  background-color: #6d889c; /* Perubahan warna */
+  transform: scale(1.1); /* Perubahan ukuran */
   border: 1px solid black;
-  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
 }
 
 .btn-clear:hover {
-  background-color: #004165;
-  box-sizing: border-box;
+  background-color: #2e3b4e; /* Warna lebih gelap */
   border: 1px solid black;
 }
 
@@ -77,16 +79,15 @@ button:hover{
 }
 
 .container {
-  /* background-color: #2c3768; */
-  background: linear-gradient(to bottom right, #0087e0 50%, #004165 50%, #004165);
+  background: linear-gradient(to bottom right, #3a4a5d, #495a70);
   padding: 20px;
   border-radius: 10px;
   width: 500px;
-  border: 1px solid black;
+  border: 1px solid #6d889c;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn-clear {
-  background-color: #0087e0;
-  border: 1px solid #004165;
+  background-color: #6d889c;
+  border: 1px solid #3a4a5d;
 }
